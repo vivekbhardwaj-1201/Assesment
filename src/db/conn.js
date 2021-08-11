@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Assignment",{
+const DB = process.env.DATABASE;
+mongoose.connect(DB,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true,
-    useFindAndModify:true, 
+    useFindAndModify:false 
 }).then(()=>{
     console.log(`Connection Successful`);
 }).catch((err)=>{
