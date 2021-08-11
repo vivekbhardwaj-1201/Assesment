@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+    crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0 auto;  
+            width: 100%;
+            min-height: 100vh;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #70f1f1;
+            background: -webkit-linear-gradient(bottom, #87b1f1, #f7b4d6);
+            background: -o-linear-gradient(bottom, #87b1f1, #f7b4d6);
+            background: -moz-linear-gradient(bottom, #87b1f1, #f7b4d6);
+            background: linear-gradient(bottom, #87b1f1, #f7b4d6);
+            position: relative;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .center {
+            background-color: lightcyan;
+            width: 250px;
+            border: 5px solid white;
+            padding: 40px;
+            margin: 30px;
+            height: auto;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center centered" id="log" style="width: 300px;" >
+        <form action="/login" method="POST">
+        <label for="rno">Registration Number</label>
+        <input type="text" class="form-control" placeholder="Registration no..." name="rno" required>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" placeholder="Password" name="password" required>
+        <br>
+        <div class="text-center">
+        <button style=" margin-bottom:10px;"type="submit" class="btn btn-primary btn-block" > Log In</button>
+        </div>
+        </form>
+        <div class="text-center btn-block"> 
+        <a href="/register" class="btn btn-success">Sign up</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
